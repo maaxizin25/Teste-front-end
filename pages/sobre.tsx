@@ -1,19 +1,16 @@
 import Link from "next/link";
 import { SobreStyled } from "../style/sobre";
+import { CardRedComponent } from "../components/cardRed";
 
 const SobrePage = () => {
   return (
     <SobreStyled>
-      <div>
-        <span>
-          <Link href={"/"}>Home</Link>
-          {">"}
-          <p>Quem somos</p>
-        </span>
-        <h2>Quem Somos</h2>
-        <p>A maior rede de tratamento pokémon</p>
-      </div>
-      <div>
+      <CardRedComponent
+        page={"Quem somos"}
+        title={"Quem somos"}
+        description={"A maior rede de tratamento pokémon"}
+      />
+      <div className="content-about">
         <h3>O centro Pokémon</h3>
         <p>Como funciona a cura de um pokémon?</p>
         <p>
